@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int arr[100], n, i, value;
+
+    // Input number of elements
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    // Input array elements
+    printf("Enter %d elements:\n", n);
+    for(i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    // Input value to insert at end
+    printf("Enter element to insert at end: ");
+    scanf("%d", &value);
+
+    // Insert at end
+    arr[n] = value;
+    n++;
+
+    // Display updated array
+    printf("Array after insertion:\n");
+    for(i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
